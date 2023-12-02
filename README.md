@@ -1,75 +1,62 @@
-# BioClub Tokyo Community Website
+# metaPhorest.org Website
 
-Public Development Repository for the  BioClub Tokyo Community Website. Theme for [BioClub Tokyo](http://www.bioclub.tokyo).
+- Public Development Repository for the metaPhorest Community Website.
+- [ProcessWire](https://processwire.com) Theme for [metaPhorest.org](https://metaphorest.org).
 
-The [old BioClub](http://bioclub.org) Website is a bit chaotic, it does not really reflect all the projects, events, experiments and social activities that are happening at BioClub.
+## Requirements
 
-Unfortunately it's not possible for the BioClub community to change/update the old website and structure of the server, therefore we decided to make a new website - where we can implement the needs and requirements of the community.
+- Free and Open Source Software
+- Bi-lingual (JP/EN)
+- metaPhorest Member Accounts
 
-The website and it's theme also need be free and open-source.
+## Content
 
-# Discussion & Content
-
-- What do you want from the site?
-- What is still missing?
-- What is needed to run the BioClub?
-
-Please write your ideas, suggestions and proposed content in the 
-[Shared Google Doc](https://docs.google.com/document/d/1o2WTNjTxkZYKmCmdziS-a4XgKwddnrclsKorgtMeCUo/edit?usp=sharing).
-
-We also made a [Shared Google Sheet](https://docs.google.com/spreadsheets/d/1IQ1l39ResywoN4pn5pU7LXOjepU_J1jULcCjwXe4JaE/edit#gid=0) to track the tasks and processes. Idealy we could move it to GitHub Issues/Projects, but let's work now with tools that everyone is familiar with.
-
-# Site Structure
-
-Site structure ideas/suggestion should go into the `\_structure` folder.
+- Pages (About, etc)
+- Member Pages (General Info, Works)
+- News
+- metaPhorest Seminars
+- Works
 
 # Design
 
-New Designs, Ideas & Suggestion should go into the `\_design` folder.
-
-### Figma
-
-Here is also a shared [Figma Project](https://www.figma.com/file/UlvsISNrw5YMwFB7B3MuC6/BioClub-Tokyo---Website?type=design&node-id=0%3A1&mode=design&t=hWTEsAzRiLPzzu5x-1) where we can jointly develop the Design for the Website.
-
-### XD
-
-We also have a shared XD Document, please ask in the [Discord](https://discord.bioclub.tokyo) #website channel for access.
+Please put Graphic Designs, Ideas & Suggestion into the `\_design` folder.
 
 # HTML-izing
 
-Turing the visual ideas into production-ready HTML is not the nicest work, but necessary.
-
-### Tachyons
-
-If you are new to CSS, use [Tachyons](http://tachyons.io). Tachyons is realatively simple and verbose, no need to install a dev-environment, anyone with a web-browser and text editor can start using it. The CSS file is not optimzed.
+Please put Production-ready HTML into the `\_html` folder.
 
 ### TailwindCSS
 
-[TailwindCSS](https://tailwindcss.com) is another take on a utility-first CSS framework, the advantage of mix-ins and smaller file size, come with a slightly more [complex dev-setup](https://tailwindcss.com/docs/installation), that might deter first-time users. Refactoring and optimizing from _Tachyons_ to _Tailwind_ should be relatively easy.
+[TailwindCSS](https://tailwindcss.com) is a utility-first CSS framework, the advantage of mix-ins and smaller file size, come with a slightly more [complex dev-setup](https://tailwindcss.com/docs/installation), that might deter first-time users.
 
-See the Tachyons and Tailwind Exampels in the [\_html](https://github.com/BioClub/labu/_html) folder.
-
->Why don't we just use code exported from Figma or XD? Because the generate code is very messy, slow and difficult to update. Exactly what we don't want.
+See a Tailwind Exampels in the `\_html` folder.
 
 # Development
 
 Wordpress used to be the universal tool of choice, but in recent releases Wordpress went more into an Website-Builder direction, rather than strengthening the CMS aspects of it. (Looking at you, Block Editor). It came to a point where it does not longer make sense to bend and modify Wordpress to function as a CMS/CMF.
 
-Also, recent the move of both ACF and WPML to go from perpetual license to a subscription fee makes Wordpress even less attractive.
+Also, recent the move of both ACF and WPML to go from perpetual license to a yearly subscription fee makes Wordpress even less attractive.
 
-After evaluation other framesworks and alternatives like SSGs, we decided to build the new BioClub Community Website using [ProcessWire](https://www.processwire.com). (But if there are other solutions, please share them in #website on the [BioClub Discord](https://discord.bioclub.tokyo)).
+After evaluation other framesworks and alternatives like SSGs, we decided to build the new metaPhorst  Website using [ProcessWire](https://www.processwire.com). (But if there are other solutions, please share them!)
 
 
 # Use Cases
 
-## 1. Bi-Lingual Events
+## 1. metaPhorest Seminars
 
-- Create an `Event Page` with all the necessary event info.
+- Create an `metaPhorest Event Page` with all the necessary event info.
 - Based on that data, create an `Event Overview Page`, showing all future events, ordered by date, includung resized image previews, title, and event abstract.
 - Once the event is finished - i.e. the `event date` is older than the current date, the event page moves to the `Event Archive Page`.
 - User can write `Event Reports`, which can be linked to the `Event Page`. Links to the `Event Reports` appear on the `Event Page.`
 
-## 2. BioClub Projects
+## 2. metaPhorest Members Sites
+
+- Each metaPhorest Members should have own page, where basic info can be edited updated
+
+## 3. Exhibition Page
+
+- Landing page for metaPhorest exhibitions. 
+
 
 
 ### Requirements
@@ -89,7 +76,6 @@ What we need/want from a CMS/CMF:
 - [x] HTTPS
 
 
-
 ### Nice to have
 - [ ] Announce Mailing List Management (subscribe/unsubscribe)
 
@@ -100,18 +86,17 @@ What we need/want from a CMS/CMF:
 
 ## TODO
 
-- [x] Add SSL Certificate via [Let's Encrypt](https://letsencrypt.org), so we can have https://bioclub.toyko
-- [x] Make Developement Site at [https://bioclub.tokyo](https://bioclub.tokyo)
-- [x] Install ProcessWire at Developement Site
-- [x] Create Template/Fields Export/Import System
-- [x] Make Basic Pages
-- [x] Make Site Bi-lingual, Japanese/English
-- [ ] Make Accounts for BioClub Community Members
-- [ ] Add Contact Form!
-
-Please share your ideas, whishes and content at the [Google Docs](https://docs.google.com/document/d/1o2WTNjTxkZYKmCmdziS-a4XgKwddnrclsKorgtMeCUo/edit?usp=sharing) , and any more Development-related issues at [GitHub Issues](https://github.com/BioClub/BioClub-Wordpress-Theme/issues).
+- [x] Add SSL Certificate via [Let's Encrypt](https://letsencrypt.org), so we can have https://metaphorest.org
+- [ ] Make Developement Site at [https://metaphorest.org](https://metaphorest.org)
+- [ ] Install ProcessWire at Developement Site
+- [ ] Create Template/Fields Export/Import System
+- [ ] Make Basic Pages
+- [ ] Make Site Bi-lingual, Japanese/English
+- [ ] Make Accounts for metaPhorest Members
 
 
-## Notes
+Please share your ideas, whishes and content at the metaPhorest Discord.
+
+
 
 
