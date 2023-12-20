@@ -40,7 +40,7 @@ $menu = $modules->get('MarkupMenuBuilder');   // get menues
 <header class="flex justify-between py-4 px-3">
   <div class="" style="">
     <a href="<?=$pages->get(1)->httpUrl?>">
-      <img src="<?php echo $config->urls->templates; ?>images/metaphorest-logo.png" class="w-8">
+      <img src="<?php echo $config->urls->templates; ?>images/metaphorest-logo.png" class="w-60">
     </a>
   </div>
 
@@ -152,7 +152,7 @@ $menu = $modules->get('MarkupMenuBuilder');   // get menues
   
   <?php if($page->editable()): ?><div class="text-center p-2"><a href='<?php echo $page->editUrl(); ?>'>Edit</a></div><?php endif; ?>
  
-  <div class="text-center p-2">©2023 metaphorest. All right reserved.</div>
+  <div class="text-center p-2">©2023 metaphorest. Site build with <a href="https://github.com/trembl/metaPhorest.org">labU</a>. All right reserved.</div>
 </footer>
 
 
