@@ -13,7 +13,7 @@ Using Tailwind CSS with Processwire:
 ## Running & Watching
 
 Start watching: 
-`npx tailwindcss -i ./styles/main.css -o ./styles/tailwind_output.css --watch`
+`npx tailwindcss -i ./styles/main.css -o ./styles/tailwind.css --watch`
 
 Example output:
 ```
@@ -26,7 +26,7 @@ Done in 292ms.
 
 Build & [Minify](https://tailwindcss.com/docs/optimizing-for-production)
 
-`npx tailwindcss -i ./styles/main.css -o ./styles/tailwind_output.css --minify`
+`npx tailwindcss -i ./styles/main.css -o ./styles/tailwind.css --minify`
 
 
 

@@ -4,10 +4,6 @@
 // This is defined by $config->prependTemplateFile in /site/config.php.
 // Use this to define shared variables, functions, classes, includes, etc. 
 
-
-
-
-
 function displayMenu($menu, $name) {
   $menuItems = $menu->getMenuItems($name, 2); // 2 -> return Object
   foreach($menuItems as $item) {

@@ -16,7 +16,7 @@
   </div>
 <?php endif; ?>
   <div class="f2 pv4">
-    <?=$page->event_date?> JST
+    <?=$page->date?> JST
   </div>
 <?php
   if ($page->images->first()):

@@ -20,35 +20,27 @@ $menu = $modules->get('MarkupMenuBuilder');   // get menues
 <head id="html-head">
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BioClub Tokyo - <?php echo $page->title; ?></title>
+<title>metaPhorest - <?php echo $page->title; ?></title>
 <meta name="robots" content="index,follow,max-image-preview:large">
-<meta name="description" content="BioClub Tokyo">
-<meta property="og:title" content="Aeon | a world of ideas">
-<meta property="og:description" content="BioClub Tokyo">
-<meta property="og:url" content="https://bioclub.tokyo">
+<meta name="description" content="metaPhorest">
+<meta property="og:title" content="metaPhorest">
+<meta property="og:description" content="metaPhorest">
+<meta property="og:url" content="https://metaphorest.org">
 <meta property="og:type" content="website">
-<!--
-<meta property="og:image" content="https://">
--->
-<link rel="canonical" href="https://bioclub.tokyo">
+<!-- <meta property="og:image" content="https://"> -->
+<link rel="canonical" href="https://metaphorest.org">
 <meta name="theme-color" content="#00FF00">
 <meta name="author" content="@trembl">
-
-<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->templates; ?>styles/tailwind_output.css" />
-
-<!-- Tachyons
-<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->templates; ?>styles/main.css" />
--->
-
+<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->templates; ?>styles/tailwind.css" />
 <script src="<?php echo $config->urls->templates; ?>scripts/main.js"></script>
 </head>
 
 <body id="html-body">
 
 <header class="flex justify-between py-4 px-3">
-  <div class="flex-none" style="width:50vh">
+  <div class="" style="">
     <a href="<?=$pages->get(1)->httpUrl?>">
-      <?php $files->include('images/bioclub_logo.svg');?>
+      <img src="<?php echo $config->urls->templates; ?>images/metaphorest-logo.png" class="w-8">
     </a>
   </div>
 
@@ -103,6 +95,7 @@ $menu = $modules->get('MarkupMenuBuilder');   // get menues
 
 <!-- footer -->
 <footer class="p-2">
+<?php /*
   <div class="mw9 center pb4">
     <div class="cf ">
     <div class="fl w-100 w-third-ns b lh-copy">
@@ -120,7 +113,7 @@ $menu = $modules->get('MarkupMenuBuilder');   // get menues
   </div>
 </div>
 
-<?php /* SVG Icons are from https://simpleicons.org */ ?>
+<?php // SVG Icons are from https://simpleicons.org  ?>
   
   <div class="text-center" id="social">
     <a class="mr-2" href="https://facebook.com/bioclubtokyo" title="Facebook">
@@ -154,9 +147,14 @@ $menu = $modules->get('MarkupMenuBuilder');   // get menues
       <span class="f6 db">Discord</span>
     </a>
   </div>
+*/ ?>
+
+  
+  <?php if($page->editable()): ?><div class="text-center p-2"><a href='<?php echo $page->editUrl(); ?>'>Edit</a></div><?php endif; ?>
+ 
+  <div class="text-center p-2">©2023 metaphorest. All right reserved.</div>
 </footer>
 
-<div class="text-center p-2"><a href="https://github.com/BioClub/labu">Site Design</a> / Logo &copy;<?php echo date("Y"); ?> BioClub Tokyo, User Contributed Content by <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div>
 
 </body>
 </html>

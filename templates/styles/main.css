@@ -1,11 +1,5 @@
 /* Example CSS file */ 
 
-/* Tachyons */
-/*
-@import url('tachyons.min.css');
-@import url('bioclub.css');
-*/
-
 /* Tailwind */
 
 @tailwind components;

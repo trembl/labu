@@ -17,6 +17,21 @@ ProcessWire ticks all the boxes we need from a CMS (or CMF).
 - Apache
 
 
+# 1. Activate Modules
+https://processwire.com/docs/multi-language-support/multi-language-urls/
+
+- Language Support Fields
+- Language Support Page Names
+
+# 2. Set Language
+
+- In `Pages -> Home -> Settings` set language prefix. `en` for English
+
+
+# 3. Add header-menu
+
+
+
 ## Templates
 
 In ProcessWire the atomic elements are `fields`, which can be used to assemble `templates`.
